@@ -196,7 +196,7 @@ class UiWindow(ttkb.Window):
             self.result_label.config(text=f'{converted_cm} cm / {converted_m} meters')
             self.result_label.grid(row=5, column=1)
         else:
-            height = int(self.entry_box1.get())
+            height = float(self.entry_box1.get())
 
             converted_height = convert.cm_to_f(height)
             converted_in = converted_height % 12
